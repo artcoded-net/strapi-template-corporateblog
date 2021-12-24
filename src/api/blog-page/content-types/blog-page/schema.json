@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "services_pages",
+  "collectionName": "blog_pages",
   "info": {
-    "singularName": "services-page",
-    "pluralName": "services-pages",
-    "displayName": "ServicesPage",
+    "singularName": "blog-page",
+    "pluralName": "blog-pages",
+    "displayName": "BlogPage",
     "description": ""
   },
   "options": {
@@ -12,20 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "ExcludedServices": {
+    "ExcludedTags": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::service.service"
+      "target": "api::tag.tag"
     },
     "Title": {
-      "type": "text",
-      "default": "Our Services",
-      "required": true
+      "type": "string",
+      "required": true,
+      "default": "Blog"
     },
     "Slug": {
       "type": "uid",
-      "targetField": "Title",
-      "required": true
+      "targetField": "Title"
     },
     "PageInfo": {
       "type": "component",

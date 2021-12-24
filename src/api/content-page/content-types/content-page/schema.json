@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content_pages",
+  "info": {
+    "singularName": "content-page",
+    "pluralName": "content-pages",
+    "displayName": "ContentPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "Title"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "PageInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.page-info"
+    }
+  }
+}

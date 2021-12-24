@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "seo_configurations",
+  "info": {
+    "singularName": "seo-configuration",
+    "pluralName": "seo-configurations",
+    "displayName": "SeoConfiguration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DefaultTitle": {
+      "type": "string",
+      "required": true
+    },
+    "DefaultDescription": {
+      "type": "text",
+      "required": true
+    },
+    "DefaultSeoImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

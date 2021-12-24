@@ -1,8 +1,9 @@
 {
   "collectionName": "components_layout_buttons",
   "info": {
-    "displayName": "Button",
-    "icon": "circle"
+    "displayName": "Link",
+    "icon": "circle",
+    "description": ""
   },
   "options": {},
   "attributes": {
