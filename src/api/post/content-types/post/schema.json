@@ -18,11 +18,6 @@
       "unique": true,
       "minLength": 3
     },
-    "Authors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "admin::user"
-    },
     "Cover": {
       "type": "media",
       "multiple": false,
